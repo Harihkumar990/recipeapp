@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#191919;
+    --card-bg:#064663;
+    --txt-color:#fafafa;
+}
+body{
+    background-color: var(--bg-color);
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: var(--bg-color);
+}
+.header{
+    display: flex;
+    height: 5rem;
+    border-bottom:2px solid #fafafa;
+    justify-content: space-between;
+    
+    width: 100vw;
+    background-color: var(--card-bg);
+    align-items: center;
+}
+.input[type=text]{
+    border-radius: 0.35rem;
+    color: var(--txt-color);
+    background-color: transparent;
+    width: 12rem;
+    position: relative;
+    right:2rem;
+    transition: scale .5s ease-in-out;
+    top:1rem;    
+}
+.input[type=text]:focus{
+    outline: none;
+    scale: 1.3;
+    
+
+}
+h1{
+    margin:0rem 0rem 0rem 5rem;
+    font-size: 4rem;
+    color: #fafafa;
+
+    font-family: 'Salsa', cursive;
+
+}
+.quote{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    left: 2rem;
+    color: #fafafa;
+    top:1rem;
+}
+.image{
+    width:240px;
+    height:250px;
+    border-radius: 1rem;
+    
+}
+.main{
+    width:255px;
+    height: 330px;
+    background-color: #fff685;
+    border-radius: 1rem;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    align-items: center;
+    
+    
+}
+.imginfo{
+    
+    width:210px;
+    display: flex;
+    font-size: small;
+    flex-direction: column;
+    font-family:'Montserrat', sans-serif;
+}
+.timecount{
+    font-size: small;
+    width: 235px;
+    display: flex;
+    justify-content: end;
+    background-color: #fafafa;
+}
+.seprate{
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+}
+.selectype{
+    border-right: 2px solid white;
+    border-radius: 1rem;
+    height: 40rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,255px);
+    grid-column-gap:5rem;
+
+}
+.selectype{
+    display: flex;
+
+    flex-direction: column;
+}
+.lablecount{
+    display: flex;
+    margin-top: 1rem;
+    height: 100vh;
+    
+    
+}
+.label{
+    font-family: 'Noto Serif', serif;
+    padding: 0rem 0rem 0rem 2rem;
+    border-bottom: 1px solid white;
+    width:240px;
+    display: flex;
+    justify-content: space-between;
+    color: #fafafa;
+    
+}
+.main:hover{
+    scale:1.1;
+    transition: scale 0.5s ease-in-out;
+}
